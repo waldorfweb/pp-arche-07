@@ -1,11 +1,11 @@
 {
-    "identifier": "Glomer7::ImageListWidget",
+    "identifier": "Arche7::ImageListWidget",
     "label": "Widget.imageListLabel",
     "previewImageURL": "/images/dia-widgets/footer-image-list.png",
     "type": "static",
     "categories": ["dia"],
     "position": 900,
-    "widgetClass": "Glomer7\\Widgets\\Common\\ImageListWidget",
+    "widgetClass": "Arche7\\Widgets\\Common\\ImageListWidget",
     "settings": {
         "class": {
             "type": "text",

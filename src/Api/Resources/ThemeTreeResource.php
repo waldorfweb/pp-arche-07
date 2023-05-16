@@ -1,6 +1,6 @@
 <?php
 
-namespace Glomer7\Api\Resources;
+namespace Arche7\Api\Resources;
 
 use IO\Api\Resources\CategoryTreeResource;
 use IO\Constants\CategoryType;
@@ -10,7 +10,7 @@ use Plenty\Plugin\Http\Response;
 use Plenty\Plugin\Http\Request;
 use IO\Api\ApiResponse;
 use IO\Api\ResponseCode;
-use Glomer7\Services\ThemeCategoryService;
+use Arche7\Services\ThemeCategoryService;
 
 /**
  * Class ThemeTreeResource

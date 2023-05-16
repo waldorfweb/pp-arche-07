@@ -1,11 +1,11 @@
 {
-    "identifier": "Glomer7::FooterTextWidget",
+    "identifier": "Arche7::FooterTextWidget",
     "label": "Widget.textLabel",
     "previewImageURL": "/images/dia-widgets/footer-text.png",
     "type": "static",
     "categories": ["dia"],
     "position": 800,
-    "widgetClass": "Glomer7\\Widgets\\Footer\\FooterTextWidget",
+    "widgetClass": "Arche7\\Widgets\\Footer\\FooterTextWidget",
     "settings": {
         "text": {
             "type": "codeEditor",

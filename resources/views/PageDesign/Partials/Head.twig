@@ -22,16 +22,16 @@
     {% endfor %}
 {% endif %}
 
-{% set defaultCSS = plugin_path("Glomer7") ~ "/css/dia/" ~ assetName ~ ".css?v=" ~ buildHash %}
-{% set defaultSCSS = plugin_path("Glomer7") ~ "/css/dia/" ~ assetName ~ ".scss?v=" ~ buildHash %}
+{% set defaultCSS = plugin_path("Arche7") ~ "/css/dia/" ~ assetName ~ ".css?v=" ~ buildHash %}
+{% set defaultSCSS = plugin_path("Arche7") ~ "/css/dia/" ~ assetName ~ ".scss?v=" ~ buildHash %}
 
 <link rel="preload" as="style" href="{{ defaultCSS }}">
 {% if LayoutContainer.show("Ceres::Template.StyleOverwrite") | trim is empty %}
-    <link rel="stylesheet" href="{{ defaultCSS }}"{% if isShopBuilder %} data-sass-root="{{ plugin_path('Glomer7') }}" data-sass-original="{{ defaultSCSS }}"{% endif %}>
+    <link rel="stylesheet" href="{{ defaultCSS }}"{% if isShopBuilder %} data-sass-root="{{ plugin_path('Arche7') }}" data-sass-original="{{ defaultSCSS }}"{% endif %}>
 {% endif %}
 
 {% if isShopBuilder %}
-    <link rel="stylesheet" href="{{ plugin_path("Glomer7") }}/css/dia/ceres-shopbuilder.css?v={{ buildHash }}">
+    <link rel="stylesheet" href="{{ plugin_path("Arche7") }}/css/dia/ceres-shopbuilder.css?v={{ buildHash }}">
 {% endif %}
 
 {{ LayoutContainer.show("Ceres::Template.StyleOverwrite") }}

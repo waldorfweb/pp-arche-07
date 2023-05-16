@@ -1,6 +1,6 @@
 <?php
 
-namespace Glomer7\Controllers;
+namespace Arche7\Controllers;
 
 use IO\Controllers\LayoutController;
 use Plenty\Modules\Category\Models\Category;

@@ -1,21 +1,21 @@
 {
     "version": "5.0.56",
     "license": "AGPL-3.0",
-    "name": "Glomer7",
+    "name": "Arche7",
     "marketplaceName": {
-        "de": "Glomer7",
-        "en": "Glomer7"
+        "de": "Arche7",
+        "en": "Arche7"
     },
     "pluginIcon": "icon_plugin_xs.png",
     "authorIcon": "icon_author_xs.png",
     "email": "",
     "phone": "",
-    "description": "Glomer theme for Ceres.",
+    "description": "Arche theme for Ceres.",
     "shortDescription": {
-        "de": "Glomer theme 02 für Ceres.",
-        "en": "Glomer theme 02 for Ceres."
+        "de": "Arche theme 02 für Ceres.",
+        "en": "Arche theme 02 for Ceres."
     },
-    "namespace": "Glomer7",
+    "namespace": "Arche7",
     "author": "Universnatur GmbH",
     "keywords": [
         "plentymarkets",
@@ -37,5 +37,5 @@
         "name": "Head: Google Tag Manager",
         "description": "Add data layer before google tag manager"
     }],
-    "serviceProvider": "Glomer7\\Providers\\ThemeServiceProvider"
+    "serviceProvider": "Arche7\\Providers\\ThemeServiceProvider"
 }

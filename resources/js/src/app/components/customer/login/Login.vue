@@ -36,7 +36,7 @@
                 </div>
                 <div class="w-100 text-center" v-if="modalElement">
                     <hr>
-                    <div>{{ $translate("Glomer7::Template.noAccountYet") }}</div>
+                    <div>{{ $translate("Arche7::Template.noAccountYet") }}</div>
                     <a :href="urlRegistration" class="btn btn-outline-primary">
                         <i aria-hidden="true" class="fa fa-user-plus ml-1"></i>{{ $translate("Ceres::Template.regRegisterAccount") }}
                     </a>
