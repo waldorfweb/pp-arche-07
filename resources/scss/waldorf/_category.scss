@@ -1,0 +1,63 @@
+@import "~bootstrap/scss/functions";
+@import "variables";
+// ==========================================================================
+// External Libs
+// ==========================================================================
+@import "~bootstrap/scss/bootstrap";
+
+// ==========================================================================
+// Custom styles
+// ==========================================================================
+
+// global
+@import "~Ceres/resources/scss/ceres/mixins/general-mixins";
+
+@import "~Ceres/resources/scss/ceres/common/background";
+@import "~Ceres/resources/scss/ceres/common/buttons";
+@import "~Ceres/resources/scss/ceres/common/common";
+@import "~Ceres/resources/scss/ceres/common/heights";
+@import "~Ceres/resources/scss/ceres/common/modal"; // TODO: This would better fit into /components
+@import "~Ceres/resources/scss/ceres/common/proportional-boxes";
+@import "~Ceres/resources/scss/ceres/common/reboot";
+@import "~Ceres/resources/scss/ceres/common/search-box";
+
+// External plugins overrides
+//@import "~Ceres/resources/scss/ceres/plugins/owl-carousel";
+
+// Components
+@import "~Ceres/resources/scss/ceres/components/alerts";
+@import "~Ceres/resources/scss/ceres/components/anicon";
+@import "~Ceres/resources/scss/ceres/components/component-base";
+
+@import "~Ceres/resources/scss/ceres/components/live-shopping";
+@import "~Ceres/resources/scss/ceres/components/notifications";
+@import "~Ceres/resources/scss/ceres/components/popover";
+@import "~Ceres/resources/scss/ceres/components/cookie-bar";
+@import "~Ceres/resources/scss/ceres/components/tooltip";
+@import "~Ceres/resources/scss/ceres/components/sticky-element";
+
+// Forms
+@import "~Ceres/resources/scss/ceres/forms/inputs";
+
+// Page Design / Global components
+@import "~Ceres/resources/scss/ceres/views/PageDesign/footer";
+@import "~Ceres/resources/scss/ceres/views/PageDesign/header";
+
+// Templates
+@import "~Ceres/resources/scss/ceres/views/Templates/BasketItemList/basket-list-item";
+@import "~Ceres/resources/scss/ceres/views/Templates/BasketPreview/basket-preview";
+@import "~Ceres/resources/scss/ceres/views/Templates/BasketTotalSum/basket-total-sum";
+@import "~Ceres/resources/scss/ceres/views/Templates/CategoryListItem/category-list-item";
+@import "~Ceres/resources/scss/ceres/views/Templates/Common/component-loading";
+@import "~Ceres/resources/scss/ceres/views/Templates/Item/quantity-input";
+
+// Pages
+@import "~Ceres/resources/scss/ceres/views/Category/category-list";
+@import "~Ceres/resources/scss/ceres/views/Category/category-list-controls";
+@import "~Ceres/resources/scss/ceres/views/Item/set-item";
+@import "~Ceres/resources/scss/ceres/views/Item/single-item";
+@import "~Ceres/resources/scss/ceres/views/ItemList/loading-animation";
+
+// Widgets
+@import "widgets/widgets";
+

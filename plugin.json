@@ -1,0 +1,41 @@
+{
+    "version": "5.0.56",
+    "license": "AGPL-3.0",
+    "name": "Glomer7",
+    "marketplaceName": {
+        "de": "Glomer7",
+        "en": "Glomer7"
+    },
+    "pluginIcon": "icon_plugin_xs.png",
+    "authorIcon": "icon_author_xs.png",
+    "email": "",
+    "phone": "",
+    "description": "Glomer theme for Ceres.",
+    "shortDescription": {
+        "de": "Glomer theme 02 für Ceres.",
+        "en": "Glomer theme 02 for Ceres."
+    },
+    "namespace": "Glomer7",
+    "author": "Universnatur GmbH",
+    "keywords": [
+        "plentymarkets",
+        "plugins",
+        "layout",
+        "theme",
+        "ceres"
+    ],
+    "price": 0,
+    "categories": [
+        3518
+    ],
+    "type": "theme",
+    "require": [
+        "Ceres"
+    ],
+    "containers": [{
+        "key": "Head.BeforeTagManager",
+        "name": "Head: Google Tag Manager",
+        "description": "Add data layer before google tag manager"
+    }],
+    "serviceProvider": "Glomer7\\Providers\\ThemeServiceProvider"
+}

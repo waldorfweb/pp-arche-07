@@ -1,0 +1,42 @@
+{% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="plentymarkets" />
+<meta name="format-detection" content="telephone=no"> {# avoid DOM manipulation by Safari #}
+
+{% set defaultFavicon = '/tpl/favicon_' ~ webstoreConfig.webstoreId ~ '.ico' %}
+<link rel="icon" type="img/ico" href="{{ webstoreConfig.faviconPath | default(ceresConfig.global.favicon) | default(defaultFavicon) }}">
+
+{% set canonicalUrl = services.url.getCanonicalURL() %}
+{% set languageUrls = services.url.getLanguageURLs() %}
+
+{% if canonicalUrl is not null %}
+    <link rel="canonical" href="{{ canonicalUrl  ~ services.url.getCanonicalQueryString() }}">
+{% endif %}
+
+{% if services.url.isCanonical() or request.get('env') == "testing" %}
+    {% for language, url in languageUrls %}
+        <link rel="alternate" hreflang="{{language}}" href="{{url}}"/>
+    {% endfor %}
+{% endif %}
+
+{% set defaultCSS = plugin_path("Glomer7") ~ "/css/dia/" ~ assetName ~ ".css?v=" ~ buildHash %}
+{% set defaultSCSS = plugin_path("Glomer7") ~ "/css/dia/" ~ assetName ~ ".scss?v=" ~ buildHash %}
+
+<link rel="preload" as="style" href="{{ defaultCSS }}">
+{% if LayoutContainer.show("Ceres::Template.StyleOverwrite") | trim is empty %}
+    <link rel="stylesheet" href="{{ defaultCSS }}"{% if isShopBuilder %} data-sass-root="{{ plugin_path('Glomer7') }}" data-sass-original="{{ defaultSCSS }}"{% endif %}>
+{% endif %}
+
+{% if isShopBuilder %}
+    <link rel="stylesheet" href="{{ plugin_path("Glomer7") }}/css/dia/ceres-shopbuilder.css?v={{ buildHash }}">
+{% endif %}
+
+{{ LayoutContainer.show("Ceres::Template.StyleOverwrite") }}
+
+<!-- Extend the existing style with a template -->
+{{ LayoutContainer.show("Ceres::Template.Style") }}
+
+{{ get_shop_builder_styles() }}
