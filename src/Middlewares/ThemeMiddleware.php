@@ -1,6 +1,6 @@
 <?php
 
-namespace Glomer7\Middlewares;
+namespace Arche7\Middlewares;
 
 use IO\Api\Resources\CategoryTreeResource;
 use IO\Services\CategoryService;
@@ -8,8 +8,8 @@ use Plenty\Plugin\Application;
 use Plenty\Plugin\Http\Request;
 use Plenty\Plugin\Http\Response;
 use Plenty\Plugin\Middleware;
-use Glomer7\Api\Resources\ThemeTreeResource;
-use Glomer7\Services\ThemeCategoryService;
+use Arche7\Api\Resources\ThemeTreeResource;
+use Arche7\Services\ThemeCategoryService;
 
 class ThemeMiddleware extends Middleware
 {

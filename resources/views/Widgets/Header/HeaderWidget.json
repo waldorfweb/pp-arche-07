@@ -1,11 +1,11 @@
 {
-    "identifier": "Glomer7::HeaderWidget",
+    "identifier": "Arche7::HeaderWidget",
     "label": "Widget.Header",
     "previewImageURL": "/images/dia-widgets/header-navbar.png",
     "type": "header",
     "categories": ["dia"],
     "position": 0,
-    "widgetClass": "Glomer7\\Widgets\\Header\\HeaderWidget",
+    "widgetClass": "Arche7\\Widgets\\Header\\HeaderWidget",
     "settings": {
         "enableLanguageSelect": {
             "type": "checkbox",

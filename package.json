@@ -1,10 +1,10 @@
 {
-    "name": "Glomer7",
+    "name": "Arche7",
     "license": "AGPL-3.0",
     "version": "5.0.56",
     "repository": {
         "type": "git",
-        "url": "https://github.com/waldorfweb/pp-glomer-07.git"
+        "url": "https://github.com/waldorfweb/pp-arche-07.git"
     },
     "scripts": {
         "start": "webpack --watch --progress",

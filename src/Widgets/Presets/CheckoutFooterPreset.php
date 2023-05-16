@@ -1,6 +1,6 @@
 <?php
 
-namespace Glomer7\Widgets\Presets;
+namespace Arche7\Widgets\Presets;
 
 use Ceres\Config\CeresConfig;
 use Ceres\Widgets\Helper\PresetHelper;
@@ -20,7 +20,7 @@ class CheckoutFooterPreset implements ContentPreset
         $preset = pluginApp(PresetHelper::class);
 
 
-        $preset->createWidget("Glomer7::FooterListWidget")
+        $preset->createWidget("Arche7::FooterListWidget")
                ->withSetting("displayInline", true)
                ->withSetting("entries", [
                    [
@@ -47,7 +47,7 @@ class CheckoutFooterPreset implements ContentPreset
                ]);
 
 
-        $preset->createWidget("Glomer7::ImageListWidget")
+        $preset->createWidget("Arche7::ImageListWidget")
                ->withSetting("entries", []);
 
         return $preset->toArray();

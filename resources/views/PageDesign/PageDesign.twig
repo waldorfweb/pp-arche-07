@@ -209,7 +209,7 @@
         "bundlePrefix": "{{ services.order.getOrderItemPrefix(2) }}",
         "bundleComponentPrefix": "{{ services.order.getOrderItemPrefix(3) }}",
         "initialPleaseSelect": {{ webstoreConfig.attributeSelectDefaultOption | default(0) }},
-        "publicPath": "{{ plugin_path('Glomer7') ~ '/js/dist/' }}",
+        "publicPath": "{{ plugin_path('Arche7') ~ '/js/dist/' }}",
         "isCheapestSorting": "{{ services.template.isCheapestSorting() }}",
         "useVariationOrderProperties": {% if webstoreConfig.useVariationOrderProperties | default(0) %}true{% else %}false{% endif %},
         "initialData": {
@@ -235,7 +235,7 @@
 {{ LayoutContainer.show("Ceres::Script.Loader") }}
 
 {{ Translations.add( "Ceres", "Template" ) }}
-{{ Translations.add( "Glomer7", "Template") }}
+{{ Translations.add( "Arche7", "Template") }}
 
 {{ get_json_data() }}
 
@@ -244,15 +244,15 @@
     {% set minSuffix = '' %}
 {% endif %}
 
-<!-- SSR:entry({{ ssr_entry('Glomer7', 'resources/js/dist/ceres-server' ~ minSuffix ~ '.js') }}) -->
+<!-- SSR:entry({{ ssr_entry('Arche7', 'resources/js/dist/ceres-server' ~ minSuffix ~ '.js') }}) -->
 <!-- SSR:on() -->
-<script src="{{ plugin_path('Glomer7') }}/js/dist/ceres-client{{ minSuffix }}.js?v={{ buildHash }}"></script>
+<script src="{{ plugin_path('Arche7') }}/js/dist/ceres-client{{ minSuffix }}.js?v={{ buildHash }}"></script>
 <!-- /SSR -->
 <!-- SSR:off() -->
-<script src="{{ plugin_path('Glomer7') }}/js/dist/{{ assetName }}{{ minSuffix }}.js?v={{ buildHash }}"></script>
+<script src="{{ plugin_path('Arche7') }}/js/dist/{{ assetName }}{{ minSuffix }}.js?v={{ buildHash }}"></script>
 <!-- /SSR -->
 
-<script src="{{ plugin_path('Glomer7') }}/js/dist/wd_custom.js"></script>
+<script src="{{ plugin_path('Arche7') }}/js/dist/wd_custom.js"></script>
 {#{% if assetName == 'ceres-checkout' %}#}
 {#    <script async src="https://cdn.novalnet.de/js/v2/NovalnetUtility.min.js"></script>#}
 {#{% endif %}#}

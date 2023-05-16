@@ -1,6 +1,6 @@
 <?php
 
-namespace Glomer7\Widgets\Presets;
+namespace Arche7\Widgets\Presets;
 
 use Ceres\Config\CeresConfig;
 use Ceres\Widgets\Helper\PresetHelper;
@@ -58,19 +58,19 @@ class DefaultFooterPreset implements ContentPreset
         $listGridPreset = $this->preset->createWidget("Ceres::FourColumnWidget");
 
         $listGridPreset
-            ->createChild("first", "Glomer7::FooterTitleWidget")
+            ->createChild("first", "Arche7::FooterTitleWidget")
             ->withSetting("text", 'Service Hotline');
 
         $listGridPreset
-            ->createChild("first", "Glomer7::FooterTextWidget")
+            ->createChild("first", "Arche7::FooterTextWidget")
             ->withSetting("text", $this->getServiceText());
 
 
         $listGridPreset
-            ->createChild("second", "Glomer7::FooterTitleWidget")
+            ->createChild("second", "Arche7::FooterTitleWidget")
             ->withSetting("text", 'Shop Service');
         $listGridPreset
-            ->createChild("second", "Glomer7::FooterListWidget")
+            ->createChild("second", "Arche7::FooterListWidget")
             ->withSetting("entries", [
                 [
                     "text" => "Item 1",
@@ -97,10 +97,10 @@ class DefaultFooterPreset implements ContentPreset
 
 
         $listGridPreset
-            ->createChild("third", "Glomer7::FooterTitleWidget")
+            ->createChild("third", "Arche7::FooterTitleWidget")
             ->withSetting("text", 'Information');
         $listGridPreset
-            ->createChild("third", "Glomer7::FooterLegalInformationWidget")
+            ->createChild("third", "Arche7::FooterLegalInformationWidget")
             ->withSetting("showCancellationRights", true)
             ->withSetting("showLegalDisclosure", true)
             ->withSetting("showPrivacyPolicy", true)
@@ -110,14 +110,14 @@ class DefaultFooterPreset implements ContentPreset
             ->withSetting("cancellationFormContainer.cancellationPdfPath", "");
 
         $listGridPreset
-            ->createChild("fourth", "Glomer7::FooterTitleWidget")
+            ->createChild("fourth", "Arche7::FooterTitleWidget")
             ->withSetting("text", 'Newsletter');
 
         $listGridPreset
             ->createChild("fourth", "Ceres::NewsletterWidget")
             ->withSetting("customClass", 'dia-footer-newsletter');
 
-        $this->preset->createWidget("Glomer7::ImageListWidget")
+        $this->preset->createWidget("Arche7::ImageListWidget")
         ->withSetting("entries", []);
     }
 

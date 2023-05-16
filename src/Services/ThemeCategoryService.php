@@ -1,6 +1,6 @@
 <?php
 
-namespace Glomer7\Services;
+namespace Arche7\Services;
 
 use IO\Constants\CategoryType;
 use IO\Guards\AuthGuard;
